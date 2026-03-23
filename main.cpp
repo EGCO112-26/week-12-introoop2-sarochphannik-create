@@ -21,22 +21,12 @@ int main(int argc, char* argv[]) {
     }
   }
 
-  cout << "All persons:" << endl;
-  for (int i = 1; i < argc; i += 2) {
-    student s;
-    s.set_name(argv[i]);
-    s.set_age(stoi(argv[i + 1]));
-    s.display();
-  }
-
-  cout << "Youngest person(s):" << endl;
+  cout << "Youngest student" << endl;
   for (int i = 1; i < argc; i += 2) {
     int age = stoi(argv[i + 1]);
     if (age == youngest_age) {
-      student s;
-      s.set_name(argv[i]);
-      s.set_age(age);
-      s.display();
+      cout << "Name: " << argv[i] << endl;
+      cout << "Age: " << age << endl;
     }
   }
 

@@ -1,0 +1,238 @@
+﻿2026-03-23T09:31:16.3424028Z Current runner version: '2.332.0'
+2026-03-23T09:31:16.3446824Z ##[group]Runner Image Provisioner
+2026-03-23T09:31:16.3447734Z Hosted Compute Agent
+2026-03-23T09:31:16.3448381Z Version: 20260213.493
+2026-03-23T09:31:16.3448965Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-03-23T09:31:16.3449660Z Build Date: 2026-02-13T00:28:41Z
+2026-03-23T09:31:16.3450262Z Worker ID: {f81470b3-b368-4514-82b1-88cbac8f3513}
+2026-03-23T09:31:16.3451060Z Azure Region: westus
+2026-03-23T09:31:16.3451566Z ##[endgroup]
+2026-03-23T09:31:16.3452981Z ##[group]Operating System
+2026-03-23T09:31:16.3453687Z Ubuntu
+2026-03-23T09:31:16.3454524Z 24.04.3
+2026-03-23T09:31:16.3454984Z LTS
+2026-03-23T09:31:16.3455525Z ##[endgroup]
+2026-03-23T09:31:16.3456030Z ##[group]Runner Image
+2026-03-23T09:31:16.3456539Z Image: ubuntu-24.04
+2026-03-23T09:31:16.3457101Z Version: 20260309.50.1
+2026-03-23T09:31:16.3458271Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260309.50/images/ubuntu/Ubuntu2404-Readme.md
+2026-03-23T09:31:16.3459811Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260309.50
+2026-03-23T09:31:16.3460684Z ##[endgroup]
+2026-03-23T09:31:16.3461842Z ##[group]GITHUB_TOKEN Permissions
+2026-03-23T09:31:16.3463642Z Actions: read
+2026-03-23T09:31:16.3464367Z Checks: write
+2026-03-23T09:31:16.3465079Z Contents: read
+2026-03-23T09:31:16.3465608Z Metadata: read
+2026-03-23T09:31:16.3466094Z ##[endgroup]
+2026-03-23T09:31:16.3468148Z Secret source: Actions
+2026-03-23T09:31:16.3468831Z Prepare workflow directory
+2026-03-23T09:31:16.3784003Z Prepare all required actions
+2026-03-23T09:31:16.3826633Z Getting action download info
+2026-03-23T09:31:16.9206105Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-03-23T09:31:17.0683998Z Download action repository 'classroom-resources/autograding-io-grader@v1' (SHA:059171be2cf09310e36a4be355b8ee0d2728fca0)
+2026-03-23T09:31:17.9422394Z Download action repository 'classroom-resources/autograding-grading-reporter@v1' (SHA:d13b5912daf5042ac1b71bc38bdb4a6bcd61d8ca)
+2026-03-23T09:31:18.8799254Z Complete job name: run-autograding-tests
+2026-03-23T09:31:18.9629738Z ##[group]Run actions/checkout@v4
+2026-03-23T09:31:18.9630941Z with:
+2026-03-23T09:31:18.9631917Z   repository: EGCO112-26/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:18.9633505Z   token: ***
+2026-03-23T09:31:18.9634396Z   ssh-strict: true
+2026-03-23T09:31:18.9635109Z   ssh-user: git
+2026-03-23T09:31:18.9635822Z   persist-credentials: true
+2026-03-23T09:31:18.9636665Z   clean: true
+2026-03-23T09:31:18.9637398Z   sparse-checkout-cone-mode: true
+2026-03-23T09:31:18.9638320Z   fetch-depth: 1
+2026-03-23T09:31:18.9639023Z   fetch-tags: false
+2026-03-23T09:31:18.9639754Z   show-progress: true
+2026-03-23T09:31:18.9640507Z   lfs: false
+2026-03-23T09:31:18.9641179Z   submodules: false
+2026-03-23T09:31:18.9641936Z   set-safe-directory: true
+2026-03-23T09:31:18.9643041Z ##[endgroup]
+2026-03-23T09:31:19.0721494Z Syncing repository: EGCO112-26/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:19.0724628Z ##[group]Getting Git version info
+2026-03-23T09:31:19.0726756Z Working directory is '/home/runner/work/week-12-introoop2-sarochphannik-create/week-12-introoop2-sarochphannik-create'
+2026-03-23T09:31:19.0729604Z [command]/usr/bin/git version
+2026-03-23T09:31:19.0807006Z git version 2.53.0
+2026-03-23T09:31:19.0832541Z ##[endgroup]
+2026-03-23T09:31:19.0846861Z Temporarily overriding HOME='/home/runner/work/_temp/0c8ff9e3-13e1-42dd-b172-a9a44b4f8d6c' before making global git config changes
+2026-03-23T09:31:19.0849571Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-23T09:31:19.0859680Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/week-12-introoop2-sarochphannik-create/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:19.0899518Z Deleting the contents of '/home/runner/work/week-12-introoop2-sarochphannik-create/week-12-introoop2-sarochphannik-create'
+2026-03-23T09:31:19.0903185Z ##[group]Initializing the repository
+2026-03-23T09:31:19.0907233Z [command]/usr/bin/git init /home/runner/work/week-12-introoop2-sarochphannik-create/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:19.1020894Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-03-23T09:31:19.1023023Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-03-23T09:31:19.1025802Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-03-23T09:31:19.1028231Z hint: call:
+2026-03-23T09:31:19.1029392Z hint:
+2026-03-23T09:31:19.1031163Z hint: 	git config --global init.defaultBranch <name>
+2026-03-23T09:31:19.1033073Z hint:
+2026-03-23T09:31:19.1035116Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-03-23T09:31:19.1038184Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-03-23T09:31:19.1040656Z hint:
+2026-03-23T09:31:19.1041782Z hint: 	git branch -m <name>
+2026-03-23T09:31:19.1043129Z hint:
+2026-03-23T09:31:19.1045367Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-03-23T09:31:19.1048607Z Initialized empty Git repository in /home/runner/work/week-12-introoop2-sarochphannik-create/week-12-introoop2-sarochphannik-create/.git/
+2026-03-23T09:31:19.1054634Z [command]/usr/bin/git remote add origin https://github.com/EGCO112-26/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:19.1076138Z ##[endgroup]
+2026-03-23T09:31:19.1078361Z ##[group]Disabling automatic garbage collection
+2026-03-23T09:31:19.1080508Z [command]/usr/bin/git config --local gc.auto 0
+2026-03-23T09:31:19.1111189Z ##[endgroup]
+2026-03-23T09:31:19.1113282Z ##[group]Setting up auth
+2026-03-23T09:31:19.1119168Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-23T09:31:19.1153718Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-23T09:31:19.1526022Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-23T09:31:19.1558860Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-23T09:31:19.1792510Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-23T09:31:19.1833939Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-23T09:31:19.2068986Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-03-23T09:31:19.2105659Z ##[endgroup]
+2026-03-23T09:31:19.2106901Z ##[group]Fetching the repository
+2026-03-23T09:31:19.2114544Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7b5ed19284c0a16d09d4f1740ef511fe7336a6fe:refs/remotes/origin/main
+2026-03-23T09:31:19.6196115Z From https://github.com/EGCO112-26/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:19.6199185Z  * [new ref]         7b5ed19284c0a16d09d4f1740ef511fe7336a6fe -> origin/main
+2026-03-23T09:31:19.6231528Z ##[endgroup]
+2026-03-23T09:31:19.6233161Z ##[group]Determining the checkout info
+2026-03-23T09:31:19.6235077Z ##[endgroup]
+2026-03-23T09:31:19.6238372Z [command]/usr/bin/git sparse-checkout disable
+2026-03-23T09:31:19.6279632Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-03-23T09:31:19.6306809Z ##[group]Checking out the ref
+2026-03-23T09:31:19.6310455Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-03-23T09:31:19.6368721Z Switched to a new branch 'main'
+2026-03-23T09:31:19.6369863Z branch 'main' set up to track 'origin/main'.
+2026-03-23T09:31:19.6372558Z ##[endgroup]
+2026-03-23T09:31:19.6413153Z [command]/usr/bin/git log -1 --format=%H
+2026-03-23T09:31:19.6438920Z 7b5ed19284c0a16d09d4f1740ef511fe7336a6fe
+2026-03-23T09:31:19.6689653Z ##[group]Run classroom-resources/autograding-io-grader@v1
+2026-03-23T09:31:19.6690661Z with:
+2026-03-23T09:31:19.6691236Z   test-name: Test
+2026-03-23T09:31:19.6691929Z   setup-command: g++ main.cpp -o student
+2026-03-23T09:31:19.6692821Z   command: ./student mama 19 mumu 18 moo 20
+2026-03-23T09:31:19.6693841Z   expected-output: Youngest student
+Name: mumu
+Age: 18
+2026-03-23T09:31:19.6695121Z   comparison-method: contains
+2026-03-23T09:31:19.6695863Z   timeout: 10
+2026-03-23T09:31:19.6696468Z   max-score: 10
+2026-03-23T09:31:19.6697078Z ##[endgroup]
+2026-03-23T09:31:20.2136662Z {
+2026-03-23T09:31:20.2137196Z   version: 1,
+2026-03-23T09:31:20.2137621Z   status: 'fail',
+2026-03-23T09:31:20.2138033Z   max_score: 10,
+2026-03-23T09:31:20.2138415Z   tests: [
+2026-03-23T09:31:20.2138772Z     {
+2026-03-23T09:31:20.2139120Z       name: 'Test',
+2026-03-23T09:31:20.2139530Z       status: 'fail',
+2026-03-23T09:31:20.2140208Z       message: 'Output does not match expected: Youngest student\n' +
+2026-03-23T09:31:20.2140908Z         'Name: mumu\n' +
+2026-03-23T09:31:20.2141384Z         'Age: 18 Got: All persons:\n' +
+2026-03-23T09:31:20.2141890Z         'mama 19\n' +
+2026-03-23T09:31:20.2142277Z         'mumu 18\n' +
+2026-03-23T09:31:20.2142675Z         'moo 20\n' +
+2026-03-23T09:31:20.2143100Z         'Youngest person(s):\n' +
+2026-03-23T09:31:20.2143551Z         'mumu 18',
+2026-03-23T09:31:20.2144013Z       test_code: './student mama 19 mumu 18 moo 20 <stdin>',
+2026-03-23T09:31:20.2144886Z       filename: '',
+2026-03-23T09:31:20.2145325Z       line_no: 0,
+2026-03-23T09:31:20.2145740Z       execution_time: '0.004s',
+2026-03-23T09:31:20.2146205Z       score: 0
+2026-03-23T09:31:20.2146594Z     }
+2026-03-23T09:31:20.2146929Z   ]
+2026-03-23T09:31:20.2147259Z }
+2026-03-23T09:31:20.2270268Z ##[group]Run classroom-resources/autograding-io-grader@v1
+2026-03-23T09:31:20.2270635Z with:
+2026-03-23T09:31:20.2270855Z   test-name: test2
+2026-03-23T09:31:20.2271094Z   command: ./student  Ohm 18 Art 20  Pete 18
+2026-03-23T09:31:20.2271498Z   expected-output: Youngest student
+Name: Ohm
+Age: 18
+Name: Pete
+Age: 18
+
+2026-03-23T09:31:20.2271899Z   comparison-method: contains
+2026-03-23T09:31:20.2272152Z   timeout: 10
+2026-03-23T09:31:20.2272352Z   max-score: 10
+2026-03-23T09:31:20.2272560Z ##[endgroup]
+2026-03-23T09:31:20.2930559Z {
+2026-03-23T09:31:20.2930948Z   version: 1,
+2026-03-23T09:31:20.2931349Z   status: 'fail',
+2026-03-23T09:31:20.2931726Z   max_score: 10,
+2026-03-23T09:31:20.2932110Z   tests: [
+2026-03-23T09:31:20.2932435Z     {
+2026-03-23T09:31:20.2932772Z       name: 'test2',
+2026-03-23T09:31:20.2933152Z       status: 'fail',
+2026-03-23T09:31:20.2933715Z       message: 'Output does not match expected: Youngest student\n' +
+2026-03-23T09:31:20.2934600Z         'Name: Ohm\n' +
+2026-03-23T09:31:20.2934955Z         'Age: 18\n' +
+2026-03-23T09:31:20.2935216Z         'Name: Pete\n' +
+2026-03-23T09:31:20.2935494Z         'Age: 18 Got: All persons:\n' +
+2026-03-23T09:31:20.2935817Z         'Ohm 18\n' +
+2026-03-23T09:31:20.2936047Z         'Art 20\n' +
+2026-03-23T09:31:20.2936323Z         'Pete 18\n' +
+2026-03-23T09:31:20.2936591Z         'Youngest person(s):\n' +
+2026-03-23T09:31:20.2936865Z         'Ohm 18\n' +
+2026-03-23T09:31:20.2937095Z         'Pete 18',
+2026-03-23T09:31:20.2937380Z       test_code: './student  Ohm 18 Art 20  Pete 18 <stdin>',
+2026-03-23T09:31:20.2937720Z       filename: '',
+2026-03-23T09:31:20.2937938Z       line_no: 0,
+2026-03-23T09:31:20.2938171Z       execution_time: '0.004s',
+2026-03-23T09:31:20.2938424Z       score: 0
+2026-03-23T09:31:20.2938629Z     }
+2026-03-23T09:31:20.2938817Z   ]
+2026-03-23T09:31:20.2939004Z }
+2026-03-23T09:31:20.3102397Z ##[group]Run classroom-resources/autograding-grading-reporter@v1
+2026-03-23T09:31:20.3102819Z with:
+2026-03-23T09:31:20.3103030Z   runners: test,test2
+2026-03-23T09:31:20.3103413Z   token: ***
+2026-03-23T09:31:20.3103623Z env:
+2026-03-23T09:31:20.3107719Z   TEST_RESULTS: eyJ2ZXJzaW9uIjoxLCJzdGF0dXMiOiJmYWlsIiwibWF4X3Njb3JlIjoxMCwidGVzdHMiOlt7Im5hbWUiOiJUZXN0Iiwic3RhdHVzIjoiZmFpbCIsIm1lc3NhZ2UiOiJPdXRwdXQgZG9lcyBub3QgbWF0Y2ggZXhwZWN0ZWQ6IFlvdW5nZXN0IHN0dWRlbnRcbk5hbWU6IG11bXVcbkFnZTogMTggR290OiBBbGwgcGVyc29uczpcbm1hbWEgMTlcbm11bXUgMThcbm1vbyAyMFxuWW91bmdlc3QgcGVyc29uKHMpOlxubXVtdSAxOCIsInRlc3RfY29kZSI6Ii4vc3R1ZGVudCBtYW1hIDE5IG11bXUgMTggbW9vIDIwIDxzdGRpbj4iLCJmaWxlbmFtZSI6IiIsImxpbmVfbm8iOjAsImV4ZWN1dGlvbl90aW1lIjoiMC4wMDRzIiwic2NvcmUiOjB9XX0=
+2026-03-23T09:31:20.3115996Z   TEST2_RESULTS: eyJ2ZXJzaW9uIjoxLCJzdGF0dXMiOiJmYWlsIiwibWF4X3Njb3JlIjoxMCwidGVzdHMiOlt7Im5hbWUiOiJ0ZXN0MiIsInN0YXR1cyI6ImZhaWwiLCJtZXNzYWdlIjoiT3V0cHV0IGRvZXMgbm90IG1hdGNoIGV4cGVjdGVkOiBZb3VuZ2VzdCBzdHVkZW50XG5OYW1lOiBPaG1cbkFnZTogMThcbk5hbWU6IFBldGVcbkFnZTogMTggR290OiBBbGwgcGVyc29uczpcbk9obSAxOFxuQXJ0IDIwXG5QZXRlIDE4XG5Zb3VuZ2VzdCBwZXJzb24ocyk6XG5PaG0gMThcblBldGUgMTgiLCJ0ZXN0X2NvZGUiOiIuL3N0dWRlbnQgIE9obSAxOCBBcnQgMjAgIFBldGUgMTggPHN0ZGluPiIsImZpbGVuYW1lIjoiIiwibGluZV9ubyI6MCwiZXhlY3V0aW9uX3RpbWUiOiIwLjAwNHMiLCJzY29yZSI6MH1dfQ==
+2026-03-23T09:31:20.3120236Z ##[endgroup]
+2026-03-23T09:31:20.3756389Z 🔄 Processing: test
+2026-03-23T09:31:20.3761474Z [31m❌ Test[0m
+2026-03-23T09:31:20.3761975Z Test code:
+2026-03-23T09:31:20.3762403Z ./student mama 19 mumu 18 moo 20 <stdin>
+2026-03-23T09:31:20.3762817Z 
+2026-03-23T09:31:20.3763025Z Total points for test: 0.00/10
+2026-03-23T09:31:20.3763369Z 
+2026-03-23T09:31:20.3763818Z [35m🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀[0m
+2026-03-23T09:31:20.3764496Z 
+2026-03-23T09:31:20.3764817Z 🔄 Processing: test2
+2026-03-23T09:31:20.3765366Z [31m❌ test2[0m
+2026-03-23T09:31:20.3765782Z Test code:
+2026-03-23T09:31:20.3766218Z ./student  Ohm 18 Art 20  Pete 18 <stdin>
+2026-03-23T09:31:20.3766654Z 
+2026-03-23T09:31:20.3766858Z Total points for test2: 0.00/10
+2026-03-23T09:31:20.3767215Z 
+2026-03-23T09:31:20.3767546Z [35mTest runner summary[35m
+2026-03-23T09:31:20.3831217Z ┌────────────────────┬─────────────┬─────────────┐
+2026-03-23T09:31:20.3832099Z │ Test Runner Name   │ Test Score  │ Max Score   │
+2026-03-23T09:31:20.3832980Z ├────────────────────┼─────────────┼─────────────┤
+2026-03-23T09:31:20.3833729Z │ test               │ 0           │ 10          │
+2026-03-23T09:31:20.3834726Z ├────────────────────┼─────────────┼─────────────┤
+2026-03-23T09:31:20.3835475Z │ test2              │ 0           │ 10          │
+2026-03-23T09:31:20.3836240Z ├────────────────────┼─────────────┼─────────────┤
+2026-03-23T09:31:20.3837003Z │ Total:             │ 0           │ 20          │
+2026-03-23T09:31:20.3837742Z └────────────────────┴─────────────┴─────────────┘
+2026-03-23T09:31:20.3838471Z [36m🏆 Grand total tests passed: 0/2[0m
+2026-03-23T09:31:20.3838871Z 
+2026-03-23T09:31:20.3863757Z ##[notice]Points 0/20
+2026-03-23T09:31:20.3875398Z ##[notice]{"totalPoints":0,"maxPoints":20}
+2026-03-23T09:31:20.3877794Z ##[error]Some tests failed.
+2026-03-23T09:31:20.3988869Z Post job cleanup.
+2026-03-23T09:31:20.4926631Z [command]/usr/bin/git version
+2026-03-23T09:31:20.4962345Z git version 2.53.0
+2026-03-23T09:31:20.5005363Z Temporarily overriding HOME='/home/runner/work/_temp/f231aefa-9709-4d94-9b20-082e6fcefbb7' before making global git config changes
+2026-03-23T09:31:20.5006819Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-23T09:31:20.5012509Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/week-12-introoop2-sarochphannik-create/week-12-introoop2-sarochphannik-create
+2026-03-23T09:31:20.5049104Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-23T09:31:20.5083105Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-23T09:31:20.5323956Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-23T09:31:20.5345661Z http.https://github.com/.extraheader
+2026-03-23T09:31:20.5358210Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-03-23T09:31:20.5388807Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-23T09:31:20.5619441Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-23T09:31:20.5650024Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-23T09:31:20.5983461Z Cleaning up orphan processes
+2026-03-23T09:31:20.6280408Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, classroom-resources/autograding-grading-reporter@v1, classroom-resources/autograding-io-grader@v1. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
